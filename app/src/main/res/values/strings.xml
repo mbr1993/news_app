@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">news</string>
+    <string name="activity_main_news_text">WASHINGTON — Senior White House officials tried to “lock down” a record of President Trump’s call with the leader of Ukraine in an attempted cover-up of Mr. Trump’s efforts to compel an investigation of a Democratic rival, a whistle-blower alleged in an explosive complaint released Thursday. \n\n The whistle-blower — a C.I.A. officer who once worked at the White House — said in the complaint that White House officials moved a transcript of the July 25 call with the Ukrainian leader, Volodymyr Zelensky, onto a secure, classified system in order to conceal actions by Mr. \n\n Trump that officials in his administration found “deeply disturbing.” In the complaint, the officer added details to what a reconstructed transcript of the call revealed about the interaction between the two leaders, asserting that government officials, including some at the White House, believed Mr. Trump</string>
+    <string name="activity_main_white_house">White House Tried to ‘Lock Down’ Ukraine Call Records, Whistle-Blower Says</string>
+    <string name="eileen_text2">Washington bureau\'s correspondent</string>
+    <string name="eileen_text1">Eileen Sullivan</string>
+    <string name="activity_main_comment">1757 comments</string>
+</resources>
