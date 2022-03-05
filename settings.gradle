@@ -10,7 +10,29 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
+//buildscript {
+//    repositories {
+//        google ()
+//        jcenter()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:7.0.1'
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30"
+//        classpath "org.jetbrains.kotlin:kotlin-serialization:1.4.30"
+//    }
+//}
+//
+//allprojects {
+//    repositories {
+//        google()
+//        jcenter()
+//        maven { url 'https://jitpack.io' }
+//    }
+//}
+
 rootProject.name = "news"
 include ':app'
