@@ -2,6 +2,7 @@
 <resources>
 
     <style name="circular">
+        <item name="color">@color/gray</item>
         <item name="cornerSize">30%</item>
     </style>
 

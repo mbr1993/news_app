@@ -3,19 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/drawable/ic_loading.xml" value="0.3705" />
         <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/drawable/round_btn.xml" value="0.305" />
         <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/drawable/section_arrowup_color.xml" value="0.268" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout-v26/activity_news_list.xml" value="0.3697916666666667" />
         <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/drawable/ic_loading.xml" value="0.1825" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3640625" />
-        <entry key="app/src/main/res/layout/activity_news_list.xml" value="0.3640625" />
-        <entry key="app/src/main/res/layout/news_main.xml" value="0.3640625" />
-        <entry key="app/src/main/res/layout/view_holder_breaking_article.xml" value="0.17395833333333333" />
-        <entry key="app/src/main/res/layout/view_holder_horizotontal_news.xml" value="0.35" />
-        <entry key="app/src/main/res/layout/view_holder_last_news.xml" value="0.35" />
-        <entry key="app/src/main/res/layout/view_holder_read_later_article.xml" value="0.17395833333333333" />
-        <entry key="app/src/main/res/layout/view_holder_recommended_article.xml" value="0.17395833333333333" />
-        <entry key="app/src/main/res/layout/view_holder_top_article.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/activity_news_detail.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/activity_news_list.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/item_another_custom_row.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/item_custom_row.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/item_cutow_row.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/news_main.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/row_layout.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/view_holder_horizontal_news.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/view_holder_horizotontal_news.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/news/app/src/main/res/layout/view_holder_last_news.xml" value="0.5" />
       </map>
     </option>
   </component>

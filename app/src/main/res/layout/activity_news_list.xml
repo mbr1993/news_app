@@ -7,33 +7,84 @@
     android:orientation="vertical"
     tools:context=".ui.news.detail.NewsDetailActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
         android:id="@+id/appbar_layout"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
+        android:layout_marginTop="20dp"
         android:theme="@style/Theme.News.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:popupTheme="@style/Theme.News.PopupOverlay" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/chomsky"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="The NewYork Times"
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="30sp" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icon_find"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:background="#E4E9EC"
+            android:src="@drawable/find"
+            android:tint="#373737"
+            app:shapeAppearanceOverlay="@style/circular" />
+
+    </LinearLayout>
+
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appbar_layout">
+        app:layout_constraintTop_toBottomOf="@id/appbar_layout"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="US Politics"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="160dp"
+                    android:text="Show all"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/breaking_news_rv"
@@ -41,17 +92,50 @@
                 android:layout_height="wrap_content"
                 android:minHeight="200dp"
                 android:orientation="horizontal"
-                android:paddingHorizontal="8dp"
+                android:paddingHorizontal="16dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:itemCount="1"
-                tools:listitem="@layout/view_holder_horizotontal_news" />
+                tools:listitem="@layout/view_holder_horizontal_news" />
 
-            <com.google.android.material.textview.MaterialTextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                android:layout_marginTop="8dp"
-                android:text="Top Stories" />
+                android:orientation="horizontal"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="Top Stories"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="Sport"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="Business"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="Local News"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/last_news_rv"

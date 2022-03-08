@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.news.data.model.news.ArticleResponse
-import com.example.news.databinding.ViewHolderHorizotontalNewsBinding
+import com.example.news.databinding.ViewHolderHorizontalNewsBinding
 
 class BreakingNewsAdapter(
     private val newsOnClick: (articleResponse: ArticleResponse) -> Unit
@@ -15,7 +15,7 @@ class BreakingNewsAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         return NewsViewHolder(
-            ViewHolderHorizotontalNewsBinding.inflate(
+            ViewHolderHorizontalNewsBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -43,7 +43,7 @@ class BreakingNewsAdapter(
     }
 
     inner class NewsViewHolder(
-        private val binding: ViewHolderHorizotontalNewsBinding
+        private val binding: ViewHolderHorizontalNewsBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bindData(data: ArticleResponse) {
@@ -52,7 +52,6 @@ class BreakingNewsAdapter(
                 newsImageSdv.setImageURI(data.imageUrl)
                 titleTv.text = data.title
                 sourceTv.text = data.source.name
-                publishedAtTv.text = data.publishedAt ?: ""
             }
         }
     }

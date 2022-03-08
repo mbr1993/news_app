@@ -19,7 +19,8 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/tramp"
-            android:tint="@color/transparent" />
+            android:tint="@color/transparent"
+            tools:ignore="UseAppTint" />
 
         <ImageView
             android:layout_width="25dp"
@@ -114,9 +115,9 @@
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
-            android:tint="#2A4867"
             android:background="#E6E6E6"
             android:src="@drawable/facebook_icon"
+            android:tint="#2A4867"
             app:shapeAppearanceOverlay="@style/circular" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -124,9 +125,9 @@
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
-            android:tint="#2A4867"
             android:background="#E6E6E6"
             android:src="@drawable/twitter"
+            android:tint="#2A4867"
             app:shapeAppearanceOverlay="@style/circular" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -134,9 +135,9 @@
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
-            android:tint="#2A4867"
             android:background="#E6E6E6"
             android:src="@drawable/envelop"
+            android:tint="#2A4867"
             app:shapeAppearanceOverlay="@style/circular"
 
             />
@@ -145,23 +146,22 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
-            android:tint="#2A4867"
             android:layout_marginStart="15dp"
             android:background="#E6E6E6"
             android:src="@drawable/share"
+            android:tint="#2A4867"
             app:shapeAppearanceOverlay="@style/circular" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginStart="70dp"
             android:layout_marginEnd="25dp"
             android:layout_weight="1"
-            android:background="@drawable/round_btn"
             android:text="@string/activity_main_comment"
             android:textAllCaps="false"
             android:textColor="#2A4867"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:textStyle="bold" />
 
 
     </LinearLayout>

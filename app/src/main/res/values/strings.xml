@@ -5,4 +5,27 @@
     <string name="eileen_text2">Washington bureau\'s correspondent</string>
     <string name="eileen_text1">Eileen Sullivan</string>
     <string name="activity_main_comment">1757 comments</string>
+
+    <string-array name="news">
+        <item>New1</item>
+        <item>New2</item>
+        <item>New3</item>
+        <item>New4</item>
+        <item>New5</item>
+        <item>New6</item>
+        <item>New7</item>
+        <item>New8</item>
+        <item>New9</item>
+    </string-array>
+    <string-array name="description">
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+    </string-array>
 </resources>

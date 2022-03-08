@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.news.data.model.news.ArticleResponse
-import com.example.news.databinding.ViewHolderHorizotontalNewsBinding
 import com.example.news.databinding.ViewHolderLastNewsBinding
 
 class LastNewsAdapter(
