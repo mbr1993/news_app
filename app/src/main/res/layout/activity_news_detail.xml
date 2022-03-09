@@ -160,8 +160,7 @@
             android:layout_weight="1"
             android:text="@string/activity_main_comment"
             android:textAllCaps="false"
-            android:textColor="#2A4867"
-            android:textStyle="bold" />
+            android:textColor="#2A4867" />
 
 
     </LinearLayout>
