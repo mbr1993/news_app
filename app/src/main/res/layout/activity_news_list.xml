@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.news.detail.NewsDetailActivity">
-
+    <!--    android:background="#A1A1A1"-->
     <TextView
         android:id="@+id/toolbar"
         android:layout_width="0dp"
@@ -84,7 +84,7 @@
                     android:paddingVertical="5dp"
                     android:text="Show all"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/app_text_color_primary"
                     app:layout_constraintBottom_toBottomOf="@id/breaking_news_tv"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@id/breaking_news_tv" />
@@ -95,51 +95,89 @@
                 android:id="@+id/breaking_news_rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="10dp"
                 android:clipToPadding="false"
                 android:minHeight="200dp"
                 android:orientation="horizontal"
                 android:paddingHorizontal="10dp"
                 tools:itemCount="1"
                 tools:listitem="@layout/view_holder_horizontal_news" />
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="4dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="10dp"
+                 android:orientation="horizontal">
+
+                 <com.google.android.material.textview.MaterialTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="12dp"
+                     android:text="Top Stories"
+                     android:textColor="@color/black"
+                     android:textStyle="bold" />
+
+                 <com.google.android.material.textview.MaterialTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="12dp"
+                     android:text="Sport"
+                     android:textStyle="bold" />
+
+                 <com.google.android.material.textview.MaterialTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="12dp"
+                     android:text="Business"
+                     android:textStyle="bold" />
+
+                 <com.google.android.material.textview.MaterialTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="12dp"
+                     android:text="Local News"
+                     android:textStyle="bold" />
+
+
+             </LinearLayout>  -->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
-                <com.google.android.material.textview.MaterialTextView
+                <TextView
+                    android:id="@+id/vertical_news_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="Middle East"
+                    android:textColor="@color/app_text_color_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/breaking_news_show_all_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+                <TextView
+                    android:id="@+id/vertical_news_name_show"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="12dp"
-                    android:text="Top Stories"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="12dp"
-                    android:text="Sport"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="12dp"
-                    android:text="Business"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="12dp"
-                    android:text="Local News"
-                    android:textStyle="bold" />
-
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/shape_rounded_button"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="Show all"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_text_color_primary"
+                    app:layout_constraintBottom_toBottomOf="@id/breaking_news_tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/breaking_news_tv" />
 
             </LinearLayout>
 

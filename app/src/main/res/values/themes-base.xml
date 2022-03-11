@@ -35,7 +35,7 @@
         <item name="roundTopLeft">true</item>
         <item name="roundTopRight">true</item>
         <item name="roundedCornerRadius">8dp</item>
-        <item name="roundingBorderWidth">1dp</item>
+<!--        <item name="roundingBorderWidth">1dp</item>-->
     </style>
 
 </resources>

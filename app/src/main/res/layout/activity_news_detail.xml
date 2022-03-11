@@ -30,7 +30,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/left"
+            android:src="@drawable/ic_baseline_arrow_back"
             app:tint="@color/white" />
 
         <ImageView
@@ -40,7 +40,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/note"
+            android:src="@drawable/ic_bookmark"
             app:tint="@color/white" />
 
         <TextView
@@ -51,7 +51,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
             android:text="Sept.26,2019    15:15 PM"
-            android:textColor="#D6D6D6"
+            android:textColor="@color/white"
             android:textSize="12sp" />
 
         <TextView
@@ -66,18 +66,20 @@
             android:layout_marginBottom="16dp"
             android:text="@string/activity_main_white_house"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/eileen"
             android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/shape_rounded_button"
             android:src="@drawable/eileen_sullivan" />
 
         <TextView
@@ -107,61 +109,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
-            android:background="#E6E6E6"
-            android:src="@drawable/facebook_icon"
-            android:tint="#2A4867"
-            app:shapeAppearanceOverlay="@style/circular" />
+            android:background="@drawable/shape_circular"
+            android:src="@drawable/ic_facebook"
+            app:tint="@color/app_text_color_primary" />
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
-            android:background="#E6E6E6"
-            android:src="@drawable/twitter"
-            android:tint="#2A4867"
-            app:shapeAppearanceOverlay="@style/circular" />
+            android:background="@drawable/shape_circular"
+            android:src="@drawable/ic_twitter"
+            app:tint="@color/app_text_color_primary" />
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
-            android:background="#E6E6E6"
-            android:src="@drawable/envelop"
-            android:tint="#2A4867"
-            app:shapeAppearanceOverlay="@style/circular"
+            android:background="@drawable/shape_circular"
+            android:src="@drawable/ic_message"
+            app:tint="@color/app_text_color_primary" />
 
-            />
-
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
-            android:background="#E6E6E6"
-            android:src="@drawable/share"
-            android:tint="#2A4867"
-            app:shapeAppearanceOverlay="@style/circular" />
+            android:background="@drawable/shape_circular"
+            android:src="@drawable/ic_share2"
+            app:tint="@color/app_text_color_primary" />
 
         <Button
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginEnd="25dp"
-            android:layout_weight="1"
+            android:layout_marginStart="80dp"
             android:text="@string/activity_main_comment"
             android:textAllCaps="false"
-            android:textColor="#2A4867" />
-
+            android:textColor="@color/app_text_color_primary"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -172,7 +166,7 @@
         android:fontFamily="sans-serif"
         android:padding="16dp"
         android:text="@string/activity_main_news_text"
-        android:textColor="@color/black" />
+        android:textColor="#353535" />
 
 
 </LinearLayout>
