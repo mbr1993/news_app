@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL
 import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
 import com.example.news.BuildConfig.BASE_URL
 import com.example.news.data.model.news.ArticleListResponse
+import com.example.news.data.model.news.ArticleResponse
 import com.example.news.data.source.ArticleRestService
 import com.example.news.databinding.ActivityNewsListBinding
 import com.example.news.ui.news.detail.NewsDetailActivity
@@ -27,12 +28,8 @@ class NewsListActivity : AppCompatActivity() {
     private val articleRestService: ArticleRestService = retrofit.create()
     private var callNewsList: Call<ArticleListResponse>? = null
 
-    private val breakingNewsAdapter = BreakingNewsAdapter {
-        startActivity(Intent(this, NewsDetailActivity::class.java))
-    }
-    private val lastNewsAdapter = LastNewsAdapter {
-        startActivity(Intent(this, NewsDetailActivity::class.java))
-    }
+    private val breakingNewsAdapter = BreakingNewsAdapter { openNewsDetail(it) }
+    private val lastNewsAdapter = LastNewsAdapter { openNewsDetail(it) }
 
     private val binding by lazy { ActivityNewsListBinding.inflate(layoutInflater) }
 
@@ -72,12 +69,18 @@ class NewsListActivity : AppCompatActivity() {
                 Timber.d(response.toString())
 
                 breakingNewsAdapter.setData(response.body()?.articles ?: listOf())
-                lastNewsAdapter.setData(response.body()?.articles ?: listOf())
+                lastNewsAdapter.setData(response.body()?.articles?.reversed() ?: listOf())
             }
 
             override fun onFailure(call: Call<ArticleListResponse>, t: Throwable) {
                 Timber.e(t)
             }
         })
+    }
+
+    private fun openNewsDetail(articleResponse: ArticleResponse){
+        val intent = Intent(this, NewsDetailActivity::class.java)
+        intent.putExtra("article", articleResponse)
+        startActivity(intent)
     }
 }

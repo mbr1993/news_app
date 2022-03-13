@@ -35,7 +35,16 @@
         <item name="roundTopLeft">true</item>
         <item name="roundTopRight">true</item>
         <item name="roundedCornerRadius">8dp</item>
-<!--        <item name="roundingBorderWidth">1dp</item>-->
+    </style>
+
+    <style name="Theme.News.SimpleDraweeViewDetail">
+        <item name="actualImageScaleType">centerCrop</item>
+        <item name="failureImage">@drawable/ic_error</item>
+        <item name="failureImageScaleType">centerInside</item>
+        <item name="placeholderImageScaleType">centerInside</item>
+        <item name="progressBarAutoRotateInterval">1000</item>
+        <item name="progressBarImage">@drawable/ic_loading</item>
+        <item name="progressBarImageScaleType">centerInside</item>
     </style>
 
 </resources>
