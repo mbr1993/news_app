@@ -51,7 +51,6 @@ class LastNewsAdapter(
                 root.setOnClickListener { newsOnClick.invoke(data) }
                 newsImageSdv.setImageURI(data.imageUrl)
                 titleTv.text = data.title
-                sourceTv.text = data.source.name
                 publishedAtTv.text = data.publishedAt ?: ""
             }
         }
